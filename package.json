@@ -1,13 +1,12 @@
 {
   "name": "angular-diagram-demo",
   "version": "0.0.0",
+  "homepage": "https://github.com/DHTMLX/angular-diagram-demo",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "deploy": "gh-pages -d storybook-static",
+    "prettier": "prettier --write */**/*.{js,ts,html,css,scss}"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +18,10 @@
     "@angular/platform-browser": "~10.0.5",
     "@angular/platform-browser-dynamic": "~10.0.5",
     "@angular/router": "~10.0.5",
+    "awesome-typescript-loader": "^5.2.1",
+    "from-cdn": "^1.0.1",
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.0.5",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -27,9 +30,16 @@
     "@angular-devkit/build-angular": "~0.1000.4",
     "@angular/cli": "~10.0.4",
     "@angular/compiler-cli": "~10.0.5",
-    "@types/node": "^12.11.1",
+    "@babel/core": "^7.10.5",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-notes": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/angular": "^5.3.19",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
+    "babel-loader": "^8.1.0",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",

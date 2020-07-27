@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.dhx-container_inner {
+  height: calc(100% - 60px);
+}
+
+.dhx_sample-container__with-editor,
+.dhx_sample-container__without-editor {
+  height: 100%;
+}
+
+.dhx_sample-container__with-editor .dhx_sample-widget {
+  height: 100%;
+}
+
+.dhx_sample-container__without-editor
+  .dhx_sample-container__widget.overflow_hidden
+  .dhx_diagram.dhx_widget
+  .dhx_diagram__container.dhx_free_diagram {
+  overflow: hidden !important;
+}
+
+.dhx_sample-container__without-editor .dhx_diagram {
+  background: #fff !important;
+}
+
+.dhx_sample-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.dhx_sample-btn {
+  border: none;
+  outline: none;
+  padding: 6px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.dhx_sample-btn--flat {
+  background-color: #0288d1;
+  color: #fff;
+}
+
+.dhx_sample-btn--flat:hover {
+  background-color: #35a0da;
+  transition: background-color 0.2s ease-out;
+}

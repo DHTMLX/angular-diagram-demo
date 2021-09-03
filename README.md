@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://dhtmlx.github.io/angular-suite-demo/?path=/story/calendar--base"><img src="https://raw.githubusercontent.com/DHTMLX/angular-suite-demo/master/public/logo.svg" width="150" heigh="55"></a>
+  <a href="https://dhtmlx.github.io/angular-diagram-demo/?path=/story/org-chart-editor--img-card"><img src="https://raw.githubusercontent.com/DHTMLX/angular-suite-demo/master/public/logo.svg" width="150" heigh="55"></a>
 </p>
 
 # DHTMLX Diagram + Angular

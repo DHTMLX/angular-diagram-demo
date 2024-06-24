@@ -1,0 +1,7 @@
+@import "../../../node_modules/@dhx/trial-diagram/codebase/diagram.min.css";
+
+.widget {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

@@ -20,16 +20,15 @@ import { IDefaultEditorConfig } from "@dhx/trial-diagram/codebase/types/ts-diagr
 export class DiagramComponent implements OnInit, OnDestroy {
   @ViewChild("here", { static: true }) diagramContainer!: ElementRef;
 
-  private _diagram: any;
+  private _diagram: DiagramEditor | null = null;
 
   ngOnInit() {
     const data = getData();
-    let diagram = new DiagramEditor(this.diagramContainer.nativeElement, { type: "default" } as IDefaultEditorConfig);
-    diagram.parse(data);
-    this._diagram = diagram;
+    this._diagram = new DiagramEditor(this.diagramContainer.nativeElement, { type: "default" } as IDefaultEditorConfig);
+    this._diagram.parse(data);
   }
 
   ngOnDestroy(): void {
-    this._diagram.destructor();
+    this._diagram?.destructor();
   }
 }
